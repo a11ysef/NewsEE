@@ -1,0 +1,102 @@
+{
+  "model": "glm-air",
+  "split": "test",
+  "held_out": [
+    "Conquering",
+    "Bodily_harm",
+    "Damaging",
+    "Change_of_leadership"
+  ],
+  "groups": {
+    "held-out types": {
+      "Trig-C": {
+        "A": 42.01,
+        "B": 45.42,
+        "diff": 3.41,
+        "lo": -0.57,
+        "hi": 7.85,
+        "significant": false
+      },
+      "Arg-C (EM)": {
+        "A": 19.65,
+        "B": 17.21,
+        "diff": -2.44,
+        "lo": -6.22,
+        "hi": 1.65,
+        "significant": false
+      }
+    },
+    "seen types": {
+      "Trig-C": {
+        "A": 37.79,
+        "B": 36.05,
+        "diff": -1.74,
+        "lo": -4.05,
+        "hi": 0.61,
+        "significant": false
+      },
+      "Arg-C (EM)": {
+        "A": 16.79,
+        "B": 15.65,
+        "diff": -1.14,
+        "lo": -2.17,
+        "hi": -0.08,
+        "significant": true
+      }
+    }
+  },
+  "per_type": {
+    "all_seen": {
+      "Conquering": {
+        "Trig-C": 42.48,
+        "Arg-C (EM)": 19.51,
+        "Arg-C (BoW)": 24.87,
+        "n_gold_triggers": 66
+      },
+      "Bodily_harm": {
+        "Trig-C": 58.59,
+        "Arg-C (EM)": 29.77,
+        "Arg-C (BoW)": 35.12,
+        "n_gold_triggers": 47
+      },
+      "Damaging": {
+        "Trig-C": 62.37,
+        "Arg-C (EM)": 19.19,
+        "Arg-C (BoW)": 28.6,
+        "n_gold_triggers": 46
+      },
+      "Change_of_leadership": {
+        "Trig-C": 15.83,
+        "Arg-C (EM)": 12.54,
+        "Arg-C (BoW)": 15.03,
+        "n_gold_triggers": 19
+      }
+    },
+    "held_out": {
+      "Conquering": {
+        "Trig-C": 45.74,
+        "Arg-C (EM)": 18.5,
+        "Arg-C (BoW)": 24.59,
+        "n_gold_triggers": 66
+      },
+      "Bodily_harm": {
+        "Trig-C": 65.93,
+        "Arg-C (EM)": 23.77,
+        "Arg-C (BoW)": 30.46,
+        "n_gold_triggers": 47
+      },
+      "Damaging": {
+        "Trig-C": 57.14,
+        "Arg-C (EM)": 14.98,
+        "Arg-C (BoW)": 23.94,
+        "n_gold_triggers": 46
+      },
+      "Change_of_leadership": {
+        "Trig-C": 18.18,
+        "Arg-C (EM)": 12.01,
+        "Arg-C (BoW)": 15.79,
+        "n_gold_triggers": 19
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "method": "framework",
+  "config": {
+    "decompose": true,
+    "guidelines": true,
+    "demos": "retrieval",
+    "k": 3,
+    "verify": true,
+    "setting": "end2end",
+    "unseen": [
+      "Conquering",
+      "Bodily_harm",
+      "Damaging",
+      "Change_of_leadership"
+    ]
+  },
+  "config_name": "staged_G_retrieval3_V_unseen-Bodi-Chan-Conq-Dama",
+  "model": "glm-air",
+  "model_id": "glm-4.5-air",
+  "split": "test",
+  "n_docs": 120,
+  "llm_calls": 712,
+  "parse_failures": 7,
+  "empty_replies": 3,
+  "verification_removed": {
+    "argument_not_in_text": 78,
+    "entity_duplicate": 117,
+    "argument_bad_role": 16,
+    "entity_not_in_text": 36,
+    "trigger_duplicate": 28,
+    "trigger_not_in_text": 11,
+    "entity_bad_type": 2
+  },
+  "usage": {
+    "calls": 396,
+    "cached": 315,
+    "prompt_tokens": 776100,
+    "completion_tokens": 124030,
+    "reasoning_tokens": 0,
+    "truncated": 5,
+    "empty": 0,
+    "filtered": 3
+  },
+  "seconds": 453.7
+}

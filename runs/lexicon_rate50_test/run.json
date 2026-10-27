@@ -1,0 +1,10 @@
+{
+  "method": "lexicon",
+  "variant": "lexicon_rate50",
+  "min_rate": 0.5,
+  "split": "test",
+  "n_docs": 120,
+  "trigger_entries": 498,
+  "entity_entries": 16597,
+  "llm_calls": 0
+}

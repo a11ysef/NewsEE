@@ -1,0 +1,38 @@
+{
+  "method": "framework",
+  "config": {
+    "decompose": false,
+    "guidelines": true,
+    "demos": "retrieval",
+    "k": 3,
+    "verify": true,
+    "setting": "end2end"
+  },
+  "config_name": "allinone_G_retrieval3_V",
+  "model": "ds-flash",
+  "model_id": "deepseek-flash",
+  "split": "dev",
+  "n_docs": 30,
+  "llm_calls": 30,
+  "parse_failures": 0,
+  "empty_replies": 0,
+  "verification_removed": {
+    "argument_not_in_text": 4,
+    "entity_duplicate": 12,
+    "entity_not_in_text": 12,
+    "argument_bad_role": 3,
+    "trigger_duplicate": 1,
+    "entity_bad_type": 1
+  },
+  "usage": {
+    "calls": 30,
+    "cached": 0,
+    "prompt_tokens": 207556,
+    "completion_tokens": 31849,
+    "reasoning_tokens": 0,
+    "truncated": 0,
+    "empty": 0,
+    "filtered": 0
+  },
+  "seconds": 36.7
+}

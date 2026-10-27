@@ -1,0 +1,8 @@
+{
+  "method": "hybrid",
+  "dictionary": "lexicon_rate50",
+  "framework_run": "staged_G_retrieval3_V_ds-pro_test",
+  "split": "test",
+  "n_docs": 120,
+  "llm_calls": 0
+}

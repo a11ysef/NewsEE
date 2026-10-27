@@ -1,0 +1,40 @@
+{
+  "method": "framework",
+  "config": {
+    "decompose": true,
+    "guidelines": true,
+    "demos": "retrieval",
+    "k": 3,
+    "verify": true,
+    "setting": "end2end",
+    "unseen": []
+  },
+  "config_name": "staged_G_retrieval3_V",
+  "model": "glm-4.7",
+  "model_id": "glm-4.7",
+  "split": "test",
+  "n_docs": 120,
+  "llm_calls": 736,
+  "parse_failures": 0,
+  "empty_replies": 4,
+  "verification_removed": {
+    "argument_not_in_text": 7,
+    "entity_not_in_text": 33,
+    "entity_duplicate": 68,
+    "trigger_duplicate": 4,
+    "trigger_not_in_text": 3,
+    "entity_bad_type": 1,
+    "argument_bad_role": 10
+  },
+  "usage": {
+    "calls": 732,
+    "cached": 0,
+    "prompt_tokens": 1772070,
+    "completion_tokens": 162150,
+    "reasoning_tokens": 0,
+    "truncated": 0,
+    "empty": 0,
+    "filtered": 4
+  },
+  "seconds": 15670.9
+}

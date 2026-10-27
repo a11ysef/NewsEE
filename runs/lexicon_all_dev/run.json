@@ -1,0 +1,10 @@
+{
+  "method": "lexicon",
+  "variant": "lexicon_all",
+  "min_rate": 0.0,
+  "split": "dev",
+  "n_docs": 30,
+  "trigger_entries": 964,
+  "entity_entries": 18773,
+  "llm_calls": 0
+}

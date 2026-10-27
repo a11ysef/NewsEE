@@ -1,0 +1,39 @@
+{
+  "method": "framework",
+  "config": {
+    "decompose": false,
+    "guidelines": true,
+    "demos": "retrieval",
+    "k": 3,
+    "verify": true,
+    "setting": "end2end"
+  },
+  "config_name": "allinone_G_retrieval3_V",
+  "model": "glm-air",
+  "model_id": "glm-4.5-air",
+  "split": "dev",
+  "n_docs": 30,
+  "llm_calls": 30,
+  "parse_failures": 1,
+  "empty_replies": 0,
+  "verification_removed": {
+    "argument_not_in_text": 29,
+    "argument_bad_role": 14,
+    "trigger_not_in_text": 3,
+    "entity_not_in_text": 16,
+    "entity_duplicate": 12,
+    "trigger_duplicate": 7,
+    "entity_bad_type": 2
+  },
+  "usage": {
+    "calls": 30,
+    "cached": 0,
+    "prompt_tokens": 208422,
+    "completion_tokens": 47612,
+    "reasoning_tokens": 0,
+    "truncated": 1,
+    "empty": 0,
+    "filtered": 0
+  },
+  "seconds": 150.5
+}

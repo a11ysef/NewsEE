@@ -1,0 +1,18 @@
+{
+  "method": "baseline_zero_shot_all_in_one",
+  "model": "ds-flash",
+  "model_id": "deepseek-flash",
+  "split": "dev",
+  "n_docs": 5,
+  "parse_failures": 1,
+  "usage": {
+    "calls": 0,
+    "cached": 5,
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "reasoning_tokens": 0,
+    "truncated": 0,
+    "empty": 0
+  },
+  "seconds": 0.0
+}

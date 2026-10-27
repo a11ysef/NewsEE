@@ -1,0 +1,39 @@
+{
+  "method": "framework",
+  "config": {
+    "decompose": true,
+    "guidelines": true,
+    "demos": "none",
+    "k": 0,
+    "verify": true,
+    "setting": "end2end"
+  },
+  "config_name": "staged_G_none_V",
+  "model": "glm-air",
+  "model_id": "glm-4.5-air",
+  "split": "dev",
+  "n_docs": 30,
+  "llm_calls": 181,
+  "parse_failures": 1,
+  "empty_replies": 1,
+  "verification_removed": {
+    "entity_duplicate": 13,
+    "argument_not_in_text": 32,
+    "argument_bad_role": 9,
+    "trigger_duplicate": 9,
+    "entity_bad_type": 1,
+    "trigger_not_in_text": 4,
+    "entity_not_in_text": 10
+  },
+  "usage": {
+    "calls": 0,
+    "cached": 181,
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "reasoning_tokens": 0,
+    "truncated": 0,
+    "empty": 0,
+    "filtered": 1
+  },
+  "seconds": 0.4
+}

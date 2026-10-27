@@ -1,0 +1,22 @@
+{
+  "method": "baseline_zero_shot_all_in_one",
+  "model": "glm-air",
+  "model_id": "glm-4.5-air",
+  "split": "test",
+  "n_docs": 120,
+  "llm_calls": 120,
+  "parse_failures": 0,
+  "empty_replies": 0,
+  "usage": {
+    "calls": 120,
+    "cached": 0,
+    "prompt_tokens": 95142,
+    "completion_tokens": 185407,
+    "reasoning_tokens": 0,
+    "truncated": 0,
+    "empty": 0,
+    "filtered": 0,
+    "note": "served from cache; usage of the original run"
+  },
+  "seconds": 0.8
+}

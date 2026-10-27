@@ -1,0 +1,21 @@
+{
+  "method": "baseline_zero_shot_all_in_one",
+  "model": "ds-pro",
+  "model_id": "deepseek-v4-pro",
+  "split": "test",
+  "n_docs": 120,
+  "llm_calls": 120,
+  "parse_failures": 1,
+  "empty_replies": 0,
+  "usage": {
+    "calls": 120,
+    "cached": 0,
+    "prompt_tokens": 91252,
+    "completion_tokens": 160314,
+    "reasoning_tokens": 0,
+    "truncated": 1,
+    "empty": 0,
+    "filtered": 0
+  },
+  "seconds": 651.1
+}

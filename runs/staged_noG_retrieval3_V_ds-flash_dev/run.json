@@ -1,0 +1,36 @@
+{
+  "method": "framework",
+  "config": {
+    "decompose": true,
+    "guidelines": false,
+    "demos": "retrieval",
+    "k": 3,
+    "verify": true,
+    "setting": "end2end"
+  },
+  "config_name": "staged_noG_retrieval3_V",
+  "model": "ds-flash",
+  "model_id": "deepseek-flash",
+  "split": "dev",
+  "n_docs": 30,
+  "llm_calls": 192,
+  "parse_failures": 0,
+  "empty_replies": 0,
+  "verification_removed": {
+    "argument_not_in_text": 5,
+    "entity_duplicate": 13,
+    "entity_not_in_text": 12,
+    "trigger_duplicate": 2
+  },
+  "usage": {
+    "calls": 0,
+    "cached": 192,
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "reasoning_tokens": 0,
+    "truncated": 0,
+    "empty": 0,
+    "filtered": 0
+  },
+  "seconds": 2.6
+}

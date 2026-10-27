@@ -1,0 +1,34 @@
+{
+  "method": "framework",
+  "config": {
+    "decompose": true,
+    "guidelines": true,
+    "demos": "retrieval",
+    "k": 3,
+    "verify": true,
+    "setting": "gold_trigger",
+    "unseen": []
+  },
+  "config_name": "staged_G_retrieval3_V_goldtrig",
+  "model": "glm-4.7",
+  "model_id": "glm-4.7",
+  "split": "test",
+  "n_docs": 120,
+  "llm_calls": 387,
+  "parse_failures": 0,
+  "empty_replies": 4,
+  "verification_removed": {
+    "argument_not_in_text": 7
+  },
+  "usage": {
+    "calls": 245,
+    "cached": 138,
+    "prompt_tokens": 590304,
+    "completion_tokens": 32979,
+    "reasoning_tokens": 0,
+    "truncated": 0,
+    "empty": 0,
+    "filtered": 4
+  },
+  "seconds": 1706.1
+}

@@ -1,0 +1,353 @@
+{
+  "model": "ds-flash-think",
+  "model_id": "deepseek-flash",
+  "split": "dev",
+  "n_docs": 3,
+  "rows": {
+    "Baseline (zero-shot, all-in-one)": {
+      "metrics": {
+        "Entity-I": {
+          "P": 0.0,
+          "R": 0.0,
+          "F1": 0.0
+        },
+        "Entity-C": {
+          "P": 0.0,
+          "R": 0.0,
+          "F1": 0.0
+        },
+        "Trig-I": {
+          "P": 0.0,
+          "R": 0.0,
+          "F1": 0.0
+        },
+        "Trig-C": {
+          "P": 0.0,
+          "R": 0.0,
+          "F1": 0.0
+        },
+        "Arg-I (EM)": {
+          "P": 0.0,
+          "R": 0.0,
+          "F1": 0.0
+        },
+        "Arg-C (EM)": {
+          "P": 0.0,
+          "R": 0.0,
+          "F1": 0.0
+        },
+        "Arg-I (BoW)": {
+          "P": 0.0,
+          "R": 0.0,
+          "F1": 0.0
+        },
+        "Arg-C (BoW)": {
+          "P": 0.0,
+          "R": 0.0,
+          "F1": 0.0
+        },
+        "_coverage": {
+          "docs_gold": 3,
+          "docs_predicted": 3
+        }
+      },
+      "info": {
+        "method": "baseline_zero_shot_all_in_one",
+        "model": "ds-flash-think",
+        "model_id": "deepseek-flash",
+        "split": "dev",
+        "n_docs": 3,
+        "llm_calls": 3,
+        "parse_failures": 0,
+        "empty_replies": 3,
+        "usage": {
+          "calls": 3,
+          "cached": 0,
+          "prompt_tokens": 2148,
+          "completion_tokens": 24576,
+          "reasoning_tokens": 24576,
+          "truncated": 3,
+          "empty": 3,
+          "filtered": 0
+        },
+        "seconds": 38.3
+      },
+      "run_dir": "/Users/chenwanqiu/PycharmProjects/NewsEE/runs/baseline_zs_ds-flash-think_dev_n3"
+    },
+    "NewsEE framework": {
+      "metrics": {
+        "Entity-I": {
+          "P": 87.5,
+          "R": 48.84,
+          "F1": 62.69
+        },
+        "Entity-C": {
+          "P": 87.5,
+          "R": 48.84,
+          "F1": 62.69
+        },
+        "Trig-I": {
+          "P": 66.67,
+          "R": 11.76,
+          "F1": 20.0
+        },
+        "Trig-C": {
+          "P": 66.67,
+          "R": 11.76,
+          "F1": 20.0
+        },
+        "Arg-I (EM)": {
+          "P": 33.33,
+          "R": 8.33,
+          "F1": 13.33
+        },
+        "Arg-C (EM)": {
+          "P": 33.33,
+          "R": 8.33,
+          "F1": 13.33
+        },
+        "Arg-I (BoW)": {
+          "P": 37.78,
+          "R": 9.44,
+          "F1": 15.11
+        },
+        "Arg-C (BoW)": {
+          "P": 35.04,
+          "R": 8.76,
+          "F1": 14.02
+        },
+        "_coverage": {
+          "docs_gold": 3,
+          "docs_predicted": 3
+        }
+      },
+      "info": {
+        "method": "framework",
+        "config": {
+          "decompose": true,
+          "guidelines": true,
+          "demos": "retrieval",
+          "k": 3,
+          "verify": true,
+          "setting": "end2end",
+          "unseen": []
+        },
+        "config_name": "staged_G_retrieval3_V",
+        "model": "ds-flash-think",
+        "model_id": "deepseek-flash",
+        "split": "dev",
+        "n_docs": 3,
+        "llm_calls": 9,
+        "parse_failures": 0,
+        "empty_replies": 3,
+        "verification_removed": {
+          "argument_not_in_text": 0
+        },
+        "usage": {
+          "calls": 9,
+          "cached": 0,
+          "prompt_tokens": 18867,
+          "completion_tokens": 36335,
+          "reasoning_tokens": 35754,
+          "truncated": 3,
+          "empty": 3,
+          "filtered": 0
+        },
+        "seconds": 74.5
+      },
+      "run_dir": "/Users/chenwanqiu/PycharmProjects/NewsEE/runs/staged_G_retrieval3_V_ds-flash-think_dev_n3"
+    }
+  },
+  "framework_vs_baseline": {
+    "Entity-C": {
+      "A": 0.0,
+      "B": 62.69,
+      "diff": 62.69,
+      "lo": 0.0,
+      "hi": 94.12,
+      "significant": false
+    },
+    "Trig-I": {
+      "A": 0.0,
+      "B": 20.0,
+      "diff": 20.0,
+      "lo": 0.0,
+      "hi": 66.67,
+      "significant": false
+    },
+    "Trig-C": {
+      "A": 0.0,
+      "B": 20.0,
+      "diff": 20.0,
+      "lo": 0.0,
+      "hi": 66.67,
+      "significant": false
+    },
+    "Arg-C (EM)": {
+      "A": 0.0,
+      "B": 13.33,
+      "diff": 13.33,
+      "lo": 0.0,
+      "hi": 33.33,
+      "significant": false
+    },
+    "Arg-C (BoW)": {
+      "A": 0.0,
+      "B": 14.02,
+      "diff": 14.02,
+      "lo": 0.0,
+      "hi": 35.04,
+      "significant": false
+    }
+  },
+  "per_type": {
+    "baseline": {
+      "Attack": {
+        "Trig-C": 0.0,
+        "Arg-C (EM)": 0.0,
+        "Arg-C (BoW)": 0.0,
+        "n_gold_triggers": 0
+      },
+      "Military_operation": {
+        "Trig-C": 0.0,
+        "Arg-C (EM)": 0.0,
+        "Arg-C (BoW)": 0.0,
+        "n_gold_triggers": 1
+      },
+      "Conquering": {
+        "Trig-C": 0.0,
+        "Arg-C (EM)": 0.0,
+        "Arg-C (BoW)": 0.0,
+        "n_gold_triggers": 2
+      },
+      "Killing": {
+        "Trig-C": 0.0,
+        "Arg-C (EM)": 0.0,
+        "Arg-C (BoW)": 0.0,
+        "n_gold_triggers": 0
+      },
+      "Death": {
+        "Trig-C": 0.0,
+        "Arg-C (EM)": 0.0,
+        "Arg-C (BoW)": 0.0,
+        "n_gold_triggers": 2
+      },
+      "Bodily_harm": {
+        "Trig-C": 0.0,
+        "Arg-C (EM)": 0.0,
+        "Arg-C (BoW)": 0.0,
+        "n_gold_triggers": 1
+      },
+      "Catastrophe": {
+        "Trig-C": 0.0,
+        "Arg-C (EM)": 0.0,
+        "Arg-C (BoW)": 0.0,
+        "n_gold_triggers": 8
+      },
+      "Destroying": {
+        "Trig-C": 0.0,
+        "Arg-C (EM)": 0.0,
+        "Arg-C (BoW)": 0.0,
+        "n_gold_triggers": 1
+      },
+      "Damaging": {
+        "Trig-C": 0.0,
+        "Arg-C (EM)": 0.0,
+        "Arg-C (BoW)": 0.0,
+        "n_gold_triggers": 0
+      },
+      "Statement": {
+        "Trig-C": 0.0,
+        "Arg-C (EM)": 0.0,
+        "Arg-C (BoW)": 0.0,
+        "n_gold_triggers": 1
+      },
+      "Change_of_leadership": {
+        "Trig-C": 0.0,
+        "Arg-C (EM)": 0.0,
+        "Arg-C (BoW)": 0.0,
+        "n_gold_triggers": 0
+      },
+      "Arriving": {
+        "Trig-C": 0.0,
+        "Arg-C (EM)": 0.0,
+        "Arg-C (BoW)": 0.0,
+        "n_gold_triggers": 1
+      }
+    },
+    "framework": {
+      "Attack": {
+        "Trig-C": 0.0,
+        "Arg-C (EM)": 0.0,
+        "Arg-C (BoW)": 0.0,
+        "n_gold_triggers": 0
+      },
+      "Military_operation": {
+        "Trig-C": 0.0,
+        "Arg-C (EM)": 0.0,
+        "Arg-C (BoW)": 0.0,
+        "n_gold_triggers": 1
+      },
+      "Conquering": {
+        "Trig-C": 0.0,
+        "Arg-C (EM)": 0.0,
+        "Arg-C (BoW)": 0.0,
+        "n_gold_triggers": 2
+      },
+      "Killing": {
+        "Trig-C": 0.0,
+        "Arg-C (EM)": 0.0,
+        "Arg-C (BoW)": 0.0,
+        "n_gold_triggers": 0
+      },
+      "Death": {
+        "Trig-C": 66.67,
+        "Arg-C (EM)": 22.22,
+        "Arg-C (BoW)": 25.64,
+        "n_gold_triggers": 2
+      },
+      "Bodily_harm": {
+        "Trig-C": 100.0,
+        "Arg-C (EM)": 50.0,
+        "Arg-C (BoW)": 50.0,
+        "n_gold_triggers": 1
+      },
+      "Catastrophe": {
+        "Trig-C": 0.0,
+        "Arg-C (EM)": 0.0,
+        "Arg-C (BoW)": 0.0,
+        "n_gold_triggers": 8
+      },
+      "Destroying": {
+        "Trig-C": 0.0,
+        "Arg-C (EM)": 0.0,
+        "Arg-C (BoW)": 0.0,
+        "n_gold_triggers": 1
+      },
+      "Damaging": {
+        "Trig-C": 0.0,
+        "Arg-C (EM)": 0.0,
+        "Arg-C (BoW)": 0.0,
+        "n_gold_triggers": 0
+      },
+      "Statement": {
+        "Trig-C": 0.0,
+        "Arg-C (EM)": 0.0,
+        "Arg-C (BoW)": 0.0,
+        "n_gold_triggers": 1
+      },
+      "Change_of_leadership": {
+        "Trig-C": 0.0,
+        "Arg-C (EM)": 0.0,
+        "Arg-C (BoW)": 0.0,
+        "n_gold_triggers": 0
+      },
+      "Arriving": {
+        "Trig-C": 0.0,
+        "Arg-C (EM)": 0.0,
+        "Arg-C (BoW)": 0.0,
+        "n_gold_triggers": 1
+      }
+    }
+  }
+}

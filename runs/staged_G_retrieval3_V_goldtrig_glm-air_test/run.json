@@ -1,0 +1,36 @@
+{
+  "method": "framework",
+  "config": {
+    "decompose": true,
+    "guidelines": true,
+    "demos": "retrieval",
+    "k": 3,
+    "verify": true,
+    "setting": "gold_trigger",
+    "unseen": []
+  },
+  "config_name": "staged_G_retrieval3_V_goldtrig",
+  "model": "glm-air",
+  "model_id": "glm-4.5-air",
+  "split": "test",
+  "n_docs": 120,
+  "llm_calls": 387,
+  "parse_failures": 0,
+  "empty_replies": 3,
+  "verification_removed": {
+    "argument_not_in_text": 39,
+    "argument_bad_role": 2
+  },
+  "usage": {
+    "calls": 286,
+    "cached": 98,
+    "prompt_tokens": 683900,
+    "completion_tokens": 34370,
+    "reasoning_tokens": 0,
+    "truncated": 0,
+    "empty": 0,
+    "filtered": 3,
+    "note": "served from cache; usage of the original run"
+  },
+  "seconds": 3.6
+}

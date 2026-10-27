@@ -1,0 +1,38 @@
+{
+  "method": "framework",
+  "config": {
+    "decompose": true,
+    "guidelines": true,
+    "demos": "random",
+    "k": 3,
+    "verify": true,
+    "setting": "end2end"
+  },
+  "config_name": "staged_G_random3_V",
+  "model": "glm-air",
+  "model_id": "glm-4.5-air",
+  "split": "dev",
+  "n_docs": 30,
+  "llm_calls": 186,
+  "parse_failures": 1,
+  "empty_replies": 3,
+  "verification_removed": {
+    "argument_not_in_text": 18,
+    "entity_not_in_text": 18,
+    "entity_duplicate": 22,
+    "trigger_duplicate": 6,
+    "trigger_not_in_text": 14,
+    "entity_bad_type": 1
+  },
+  "usage": {
+    "calls": 183,
+    "cached": 0,
+    "prompt_tokens": 440571,
+    "completion_tokens": 56099,
+    "reasoning_tokens": 0,
+    "truncated": 1,
+    "empty": 0,
+    "filtered": 3
+  },
+  "seconds": 240.6
+}

@@ -1,0 +1,38 @@
+{
+  "method": "framework",
+  "config": {
+    "decompose": true,
+    "guidelines": true,
+    "demos": "retrieval",
+    "k": 5,
+    "verify": true,
+    "setting": "end2end"
+  },
+  "config_name": "staged_G_retrieval5_V",
+  "model": "glm-air",
+  "model_id": "glm-4.5-air",
+  "split": "dev",
+  "n_docs": 30,
+  "llm_calls": 199,
+  "parse_failures": 0,
+  "empty_replies": 3,
+  "verification_removed": {
+    "argument_not_in_text": 24,
+    "trigger_not_in_text": 4,
+    "entity_not_in_text": 15,
+    "entity_duplicate": 41,
+    "trigger_duplicate": 12,
+    "entity_bad_type": 1
+  },
+  "usage": {
+    "calls": 196,
+    "cached": 0,
+    "prompt_tokens": 705780,
+    "completion_tokens": 47095,
+    "reasoning_tokens": 0,
+    "truncated": 0,
+    "empty": 0,
+    "filtered": 3
+  },
+  "seconds": 257.3
+}

@@ -1,0 +1,37 @@
+{
+  "method": "framework",
+  "config": {
+    "decompose": true,
+    "guidelines": true,
+    "demos": "retrieval",
+    "k": 3,
+    "verify": true,
+    "setting": "end2end",
+    "unseen": []
+  },
+  "config_name": "staged_G_retrieval3_V",
+  "model": "ds-pro",
+  "model_id": "deepseek-v4-pro",
+  "split": "test",
+  "n_docs": 120,
+  "llm_calls": 732,
+  "parse_failures": 7,
+  "empty_replies": 0,
+  "verification_removed": {
+    "argument_not_in_text": 18,
+    "entity_duplicate": 45,
+    "trigger_duplicate": 4,
+    "entity_not_in_text": 22
+  },
+  "usage": {
+    "calls": 732,
+    "cached": 0,
+    "prompt_tokens": 1760089,
+    "completion_tokens": 245185,
+    "reasoning_tokens": 0,
+    "truncated": 7,
+    "empty": 0,
+    "filtered": 0
+  },
+  "seconds": 1303.6
+}
